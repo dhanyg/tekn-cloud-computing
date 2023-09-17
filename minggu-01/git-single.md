@@ -5,7 +5,7 @@ $ sudo apt install git -y
 ```
 ![install git](./01-install-git.png)
 
-Setelah proses instalasi selesai, cek dengan perintah `git --version`:
+Setelah proses instalasi selesai, cek dengan perintah `git --version`:  
 ![cek versi git](./02-git-version.png)
 
 ## Konfigurasi Git
@@ -19,7 +19,7 @@ $ git config --global user.email "ramayoga04@gmail.com"
 ```
 ![konfigurasi nama dan email git](./03-git-config.png)
 
-Kemudian cek konfigurasi dengan perintah `git config --list`:
+Kemudian cek konfigurasi dengan perintah `git config --list`:  
 ![cek konfigurasi git](./04-git-config-list.png)
 
 ## Mengelola Repo
@@ -27,7 +27,7 @@ Kemudian cek konfigurasi dengan perintah `git config --list`:
 Login ke [Github](https://www.github.com) kemudian buat repositori baru dengan mengeklik tanda `+` di bagian atas kemudian pilih *New repository*.
 ![membuat repo baru di github](./05-create-new-repo.png)
 
-Isi *__Repository Name__* dengan nama `tekn-cloud-computing` dan berikan deskripsi pada bagian *__Description__* (opsional), lalu klik tombol *__Create repository__*.
+Isi *__Repository Name__* dengan nama `tekn-cloud-computing` dan berikan deskripsi pada bagian *__Description__* (opsional), lalu klik tombol *__Create repository__*.  
 ![proses pembuatan repo di github](./06-create-repository.png)
 
 ### 2. Clone Repo
@@ -66,10 +66,10 @@ Login ke [Github](https://github.com) kemudian klik icon profile, kemudian Pilih
 
 Konfirmasi dengan memasukkan password akun github.
 
-Isi pada bagian *__Note__*. Set *__Expiration__* menjadi `No expiration`, dan berikan centang pada opsi `repo` dan `workflow`. Klik *__Generate token__*.
+Isi pada bagian *__Note__*. Set *__Expiration__* menjadi `No expiration`, dan berikan centang pada opsi `repo` dan `workflow`. Klik *__Generate token__*.  
 ![memasukkan password github](./15-new-personal-access-token.png)
 
-Silakan salin token yang sudah dibuat tadi. Kemudian lakukan push kembali. Pada bagian password, masukkan token yang sudah di-*copy* tadi.
+Silakan salin token yang sudah dibuat tadi. Kemudian lakukan push kembali. Pada bagian password, masukkan token yang sudah di-*copy* tadi.  
 ![push dengan perintah git push origin main](./16-git-push-success.png)
 
 ### 4. Mengubah Isi dengan Branching dan Merging
@@ -78,10 +78,10 @@ Buat branch baru dengan nama `edit-readme-1`.
 $ git checkout -b edit-readme-1
 ```
 
-Kemudian edit file README.md.
+Kemudian edit file README.md.  
 ![mengedit file REDME.md](./17-edit-readme.png)
 
-Lakukan *commit* lagi ke repo git.
+Lakukan *commit* lagi ke repo git.  
 ![commit dengan perintah git commit -am](./18-git-commit.png)
 
 Lakukan *push* ke repositori github dari branch `edit-readme-1`.
@@ -115,16 +115,16 @@ $ git checkout -b edit-readme-2
 ```
 ![membuat branch baru dengan perintah git checkout -b](./25-create-new-branch.png)
 
-Lakukan modifikasi pada file README.md.
+Lakukan modifikasi pada file README.md.  
 ![mengedit README](./26-edit-readme.png)
 
-Kembali ke branch `main` dan cek isi file README.md
+Kembali ke branch `main` dan cek isi file README.md  
 ![mengecek isi README dari branch main](./27-git-checkout-main.png)
 
-Hapus branch `edit-readme-2` dengan perintah `git branch -D edit-readme-2`. Kemudian cek daftar branch yang masih ada dengan perintah `git branch`.
+Hapus branch `edit-readme-2` dengan perintah `git branch -D edit-readme-2`. Kemudian cek daftar branch yang masih ada dengan perintah `git branch`.  
 ![menghapus branch dengan perintah git branch -D](./28-delete-branch.png)
 
-Untuk mengembalikan isi file README.md ke *state* awal sebelum diubah dari branch `edit-readme-2`, lakukan reset dengan perintah `git reset --hard`.
+Untuk mengembalikan isi file README.md ke *state* awal sebelum diubah dari branch `edit-readme-2`, lakukan reset dengan perintah `git reset --hard`.  
 ![melakukan reset dengan perintah git reset --hard](./29-git-reset.png)
 
 ### 7. Undo Commit Terakhir
@@ -136,13 +136,14 @@ Kembalikan *state* ke posisi sebelum *commit* terakhir dengan menggunakan perint
 ![melakukan git revert](./32-git-revert.png)
 ![](./33-cat-readme.png)
 
-Apabila ingin mengembalikan perubahan yang sudah di-*commit* namun belum dilakukan *push* ke github, gunakan perintah `git reset --hard HEAD^`.
+Apabila ingin mengembalikan perubahan yang sudah di-*commit* namun belum dilakukan *push* ke github, gunakan perintah `git reset --hard HEAD^`.  
 ![melakukan git reset](./34-git-reset-head.png)
 ![](./35-cat-readme.png)
 
 Untuk mengembalikan *state* ke perubahan yang sudah lama, gunakan perintah `git revert <posisi>`.
 ![melakukan git revert ke posisi tertentu](./36-git-revert.png)
-![git revert conflict](./37-git-revert-error.png)
+![git revert conflict](./37-git-revert-error.png)  
+
 Edit kembali file README.md untuk memperbaiki error *conflict*. Setelah itu lanjut proses *revert* dengan perintah `git revert --continue`.
 ![memperbaiki conflict dan melanjutkan revert](./38-solve-merge-conflict.png)
 
