@@ -5,13 +5,13 @@ Login ke github kemudian cari repositori yang akan di-*fork*. Dalam contoh ini a
 Klik pada tombol *Fork*.  
 ![mengeklik tombol fork di github](./39-fork.png)
 
-Beri nama untuk repositori yang akan diubah, atau biarkan sama dengan repositori aslinya. Tambahkan deskripsi jika perlu, kemudian klik *__Create fork__*.
+Beri nama untuk repositori yang akan diubah, atau biarkan sama dengan repositori aslinya. Tambahkan deskripsi jika perlu, kemudian klik *__Create fork__*.  
 ![mengisi nama repo fork](./40-create-new-fork.png)
 
 Lakukan *clone* ke lokal komputer dengan perintah:
 ```
-$ git clone https://github.com/dhanyg/playground.git
-```
+$ git clone <url_repo_kita>
+```  
 ![eksekusi perintah git clone pada terminal](./41-clone-repo.png)  
 ![eksekusi perintah git status](./42-git-status.png)  
 
@@ -19,7 +19,7 @@ Tambahkan *remote* untuk *upstream* dengan perintah `git remote add <url_repo_as
 ![eksekusi perintah git remote add pada terminal](./43-git-remote-add.png)
 
 ## Mengirimkan Pull Request
-Pertama-tama lakukan sinkronisasi dengan repositori asli dengan perintah `git fetch upstream`.
+Pertama-tama lakukan sinkronisasi dengan repositori asli dengan perintah `git fetch upstream`.  
 ![eksekusi perintah git fetch](./44-git-fetch-upstream.png)
 
 Buat branch baru dengan nama `add-contributor`.  
@@ -31,7 +31,7 @@ Lakukan pengeditan.
 Kemudian lakukan *commit*.  
 ![eksekusi perintah git commit](./47-git-commit.png)
 
-Lakukan *push* ke repositori milik kita.  
+Lakukan *push* ke repositori milik kita.   
 ![eksekusi perintah git push](./48-git-push.png)
 
 Selanjutnya masuk ke repositori milik kita di github dan pilih *Compare & pull request*.  
