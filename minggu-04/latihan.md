@@ -71,7 +71,19 @@ Lakukan instalasi *Devstack* dengan menjalankan perintah:
 Silakan tunggu proses intalasi hingga selesai. Proses instalasi memakan waktu yang lama tergantung kecepatan komputer dan koneksi internet.  
   
 Setelah proses instal selesai, lakukan pengecekan dengan mengakses ke url `http://ip-address/dashboard`.  
-
+![halaman login openstack](./23-login-openstack.png)  
+  
 Login ke dalam *OpenStack* menggunakan user `admin` serta password yang digunakan pada saat konfigurasi file `local.conf` tadi.  
+![halaman dashboard openstack](./24-openstack-overview.png)  
 
 ## Menambahkan Image Pada OpenStack
+Untuk menambahkan *image*, masuk ke menu *__images__* kemudian pilih *__Create image__*.  
+![halaman menu images](./25-create-images.png)  
+
+Isi pada bagian *__Image Name__*, *__Image Descriptionn__*. Upload *image* pada bagia *__Browse__* lalu pilih format *__QCOW2 - QEMU Emulator__*.  
+![halaman upload image](./26-create-image.png)
+  
+Proses upload akan berlangsung. Setelah selesai maka *image* tadi akan muncul pada halaman *__Images__*.  
+![daftar images yang telah diupload](./27-images.png)  
+  
+Selesai.
