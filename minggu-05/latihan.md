@@ -51,7 +51,7 @@ Masuk ke dalam direktori `ofbiz` kemudian ketikkan perintah berikut:
 ```
 ![menjalankan perintah ./gradlew loadAll ofbiz](./04-gradlew-loadall.png)  
   
-Sistem akan melakukan proses unduh. Kemudian sistem akan menjalankan *Gradle daemon* sekaligus service Apache Ofbiz. Proses ini dapat memakan waktu yang lama. 
+Sistem akan melakukan proses unduh. Kemudian sistem akan menjalankan *Gradle daemon* sekaligus service Apache Ofbiz. Proses ini dapat memakan waktu yang lama.  
 ![proses download dan starting gradle daemon](./05-starting-gradle-daemon.png)  
   
 Service Apache Ofbiz telah berjalan ditandai dengan tampilan seperti berikut di terminal:  
