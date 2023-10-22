@@ -16,6 +16,8 @@ $ git clone --depth 1 --branch minggu-06 --no-checkout https://github.com/dhanyg
 $ cd tekn-cloud-computing
 $ git sparse-checkout set minggu-06/latihan
 $ git checkout minggu-06
+$ cd minggu
+$ cd latihan
 ```
 
 ### File go-mysql
